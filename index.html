@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namasthey React</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <h1>Outside the root won't be replaced</h1>
+    <div id="root">
+        <h1>Hello World!!!</h1>
+        <!-- This will be replaces by the rendered code -->
+    </div>
+    <!-- <script>
+        const heading = document.createElement("h1");
+        heading.innerHTML = "Hello World using Javascript!!";
+        const root = document.getElementById("root");
+        root.appendChild(heading);
+    </script> -->
+
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script src="./App.js">   
+    // This import of app.js file should be below the cdn links only as it uses the react which is in the cdn link files
+    
+        // const heading = React.createElement("h1", {}, "Hello World using React!!!");
+        // const root = ReactDOM.createRoot(document.getElementById("root"));
+        // root.render(heading);
+    </script>
+
+</body>
+
+</html>
