@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "learning react",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build inde.html",
     "test": "jest"
   },
   "author": "",
@@ -14,5 +16,8 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  }
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
 }
